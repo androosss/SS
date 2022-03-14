@@ -1,0 +1,35 @@
+Tabela simbola
+
+            ime        sekcija     offset/val     domen r.br
+      undefined      undefined              0     local    0
+        myStart         myCode              0    global    1
+      myCounter         myData              0    global    2
+         myCode         myCode              0     local    3
+        tim_cfg       absolute          65296     local    4
+           wait         myCode             10     local    5
+         myData         myData              0     local    6
+
+
+Relokaciona tabela
+
+        sekcija  offset         tip r.br u t.s
+         myCode      13     MEM_Dir          2
+         myCode      25         IMM          5
+
+
+Sadrzaj sekcija
+
+undefined 0
+
+myCode 28
+A00FOO0001
+B00F04FF10
+A00F040000
+A01F000005
+7401
+52FF00000A
+00
+
+myData 2
+0000
+

@@ -1,0 +1,57 @@
+Tabela simbola
+
+            ime        sekcija     offset/val     domen r.br
+      undefined      undefined              0     local    0
+            ivt            ivt              0     local    1
+        myStart      undefined              0     local    2
+      myCounter      undefined              0     local    3
+            isr            isr              0     local    4
+       term_out       absolute          65280     local    5
+        term_in       absolute          65282     local    6
+      asciiCode       absolute             84     local    7
+      isr_reset            isr              0     local    8
+      isr_timer            isr              5     local    9
+   isr_terminal            isr             22     local   10
+
+
+Relokaciona tabela
+
+        sekcija  offset         tip r.br u t.s
+            ivt       0         IMM          8
+            ivt       4         IMM          9
+            ivt       6         IMM         10
+            isr       3         IMM          2
+            isr      41      PC_Rel          3
+            isr      53     MEM_Dir          3
+
+
+Sadrzaj sekcija
+
+undefined 0
+
+ivt 16
+0000
+0000
+0005
+0016
+0000000000000000
+
+isr 62
+50FF000000
+B00622
+A00F000054
+B00F04FF00
+A00632
+20
+B00622
+B01622
+A00F04FF02
+B00F04FF00
+A00705FFFE
+A01F000001
+7001
+B00F040000
+A01632
+A00632
+20
+
